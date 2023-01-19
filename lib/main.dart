@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
+            //only wrap the necessary widget that updated in the ui
             BlocBuilder<CounterCubit, CounterState>(
               builder: (context, state) {
                 return Text(
