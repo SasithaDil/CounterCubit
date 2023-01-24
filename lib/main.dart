@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             //only wrap the necessary widget that updated in the ui
-            BlocBuilder<CounterCubit, CounterState>(
+            BlocBuilder<CounterCubit, CounterInitialState>(
               builder: (context, state) {
                 return Text(
                   state.counterValue.toString(),
